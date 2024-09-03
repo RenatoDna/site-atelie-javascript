@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    background-color: #eee7df;
+}
+.main-sobrenos{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.sobrenos-texto-img{
+    display: flex;
+    padding: 10px;
+    padding-bottom: 70px;
+}
+.sobrenos-img{
+    width: 400px;
+    border-radius: 4px;
+}
+.dados-sobrenos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.Endereco-sobre-nos{
+    text-align: left;
+}
+.paragrafo-sobrenos{
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 70px;
+    text-align: center;
+    align-items: center;
+}
+.h5-sobre-nos{
+    font-size: 18px;
+}
+.span-sobre-nos{
+    font-size: 14px;
+}
+@media screen and (max-width: 1300px) {
+    .galeria-conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+    .div-galeria{
+        height: 500px;
+    }
+    .sobrenos-texto-img{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .sobrenos-img{
+        width: 340px;
+    }
+    .dados-sobrenos{
+        flex-direction: column;
+    }
+    .Endereco-sobre-nos{
+        align-items: center;
+        text-align: center;
+    }
+}

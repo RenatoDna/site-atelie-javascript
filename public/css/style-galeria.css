@@ -1,0 +1,129 @@
+/* Mantém a importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    background-color: #eee7df;
+}
+.main-galeria {
+    display: flex;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    padding: 20px; /* Adiciona padding para melhor espaçamento */
+}
+
+.div-galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 20px; /* Espaçamento entre os itens da galeria */
+}    
+
+.pintor {
+    display: none;
+    text-align: center;
+    user-select: none;
+    transition: opacity 0.5s ease; /* Transição suave */
+}
+
+.pintor.active {
+    display: block;
+    opacity: 1;
+}
+
+.h1-galeria {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.divImg {
+    padding: 10px; /* Adiciona padding ao redor da imagem */
+}
+
+.img-galeria {
+    border-radius: 10px;
+    height: 300px;
+    max-width: 100%;
+}
+
+.divText {
+    padding: 10px; /* Espaçamento ao redor do texto */
+}
+
+.h3-galeria {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 22px;
+}
+.carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.5s ease; /* Animação de transição suave */
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease; /* Animação de transição suave */
+    width: 100%;
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 20px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1300px) {
+    .main-galeria {
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+    
+    .galeria-conteudo {
+        flex-direction: column;
+    }
+
+    .img-galeria {
+        max-width: 70%;
+        height: 300px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    /* Melhora o comportamento dos botões de navegação */
+    .carousel-button {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

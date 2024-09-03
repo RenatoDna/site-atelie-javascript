@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style-pagamentos.css" type="text/css">
+    <title>Pagamento</title>
+</head>
+<body>
+    <header class="container" id="container"></header>
+    <section class="carrinho" id="carrinho">
+        <h1 id="h1carrinho">Carrinho</h1>
+        <div class="carrinho-itens" id="carrinho-itens"></div>
+    </section>
+    <section class="pagamentos">
+        <h1>Página de Pagamento</h1>
+        <div id="ResumoDoCurso" class="ResumoDoCurso"></div>
+        <form id="formaDePagamento" class="formaDePagamento">
+            <div class="opcoesDePagamento" >
+                <label><input type="radio" name="metodoDePagamento" value="credito" checked> Cartão de Crédito</label>
+                <label><input type="radio" name="metodoDePagamento" value="debito"> Cartão de Débito</label>
+                <label><input type="radio" name="metodoDePagamento" value="boleto"> Boleto</label>
+                <label><input type="radio" name="metodoDePagamento" value="pix"> PIX</label>
+            </div>
+            <div id="detalhePagamento"></div>
+            <button type="submit">Finalizar Pagamento</button>
+        </form>
+    </section>
+    <footer id="footer"></footer>
+    <script src="../js/script.js" ></script>
+    <script src="../js/pagamentos.js"></script>
+    <script type="module" src="../js/status.js"></script>
+
+</body>
+</html>

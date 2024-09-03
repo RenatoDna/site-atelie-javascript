@@ -1,0 +1,26 @@
+{
+  "name": "meuatelie-backend",
+  "version": "1.0.0",
+  "description": "backend projeto meuatelie",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon app.js",
+    "db:table": "node database/tables.js",
+    "db:seed": "node database/seed.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "jose renato",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "uuid": "^10.0.0"
+  }
+}

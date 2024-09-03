@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*------------ Login-------------*/
+.main-login{
+    background-image: url('../img/micgelangelo-museum.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+}
+.login-container{
+    min-height: 300px;
+    min-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formaLogin{
+    margin-bottom: 15px;
+}
+label{
+    font-size: 16px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.ancoras-senha{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.ancora-esq-senha,.ancora-cadastro{
+    text-decoration: none;
+    color: black;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #a6a6a6;
+}
+button:focus{
+    outline: none;
+}
+.ancora-esq-senha:hover,.ancora-cadastro:hover{
+    color: #1138e6;
+}
+@media screen and (max-width: 800px) {
+    .login-container{
+        min-width: 340px;
+    }
+}
